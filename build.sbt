@@ -14,7 +14,7 @@ lazy val root = (project in file("."))
       libraryDependencies ++= Seq(
           Defaults.sbtPluginExtra(
               "com.typesafe.sbt" % "sbt-git" % "0.9.3",
-              /*(sbtBinaryVersion in pluginCrossBuild).value,*/
+              (sbtBinaryVersion in pluginCrossBuild).value,
               (scalaBinaryVersion in pluginCrossBuild).value
           ),
           Defaults.sbtPluginExtra(
